@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+.container{
+    background-color: #1F2937;
+    width: 1000px;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+.navbar{
+width: 100%;
+display: flex;
+align-items: center;
+}
+
+h1{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;    
+}
+
+menu-icon{
+    width: 25px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left:50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+    
+}
+
+.col-1 h3{
+    font-size: 30px;
+    color: yellowgreen;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 h4{
+    font-size: 54px;
+    color: violet;
+    font-weight: 100;
+}
+
+
+button{
+    width:140px;
+    border-radius: 12px;
+    border: none;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: #3882f6;
+    cursor: pointer;
+    /* following code will animate the button */
+    transition: width 0.5s;
+}
+
+button img{
+    width: 30px;
+    display: none;
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover{
+width: 160px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/* this will make a line */
+.col-1::after{
+    content: "";
+    width: 10px;
+    height:57%;
+    background:linear-gradient(yellow, aqua, green);
+    position: absolute;
+    left:-40px;
+    top: 8px;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+/* here space between col-2 and .hazel is impt */
+.col-2 .hazel{
+    width: 90%;
+    border-radius: 12%;
+}
+/* this will give us a box */
+/* 
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: brown;
+    /* border-radius: 20px 0 0 20px */
+    /* border-radius: 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+/* }   */
+
+/* this code is for screens less than 700 px */
+/* to make something invisible in html simply write 
+display: none */
+@media only screen and (max-width: 700px){
+
+nav ul{
+    width: 100%;
+    background: red;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+}
+
+nav ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav ul li a{
+    color: black;
+}
+
+.h2{
+display: block;
+}
+
+.row{
+    flex-direction: column-reverse;
+    margin: 50px 0;
+}
+.col-2{
+    flex-basis: 100%;
+    margin-bottom: 50px;
+}
+
+.col-2 .hazel{
+    width: 77%;
+}
+
+.color-box{
+    transform: translateX(75px);
+}
+.col-1{
+    flex-basis: 100%;
+}
+
+.col-1 h2{
+    font-size: 35px;
+}
+.col-1 h3{
+    font-size: 15px;
+}
+
+}
+
+#div1{
+   
+    background-color: whitesmoke;
+    width: 1000px;
+    height: 600px;
+    padding-left: 8%;
+    padding-right: 8%;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+#div2{
+    background-color: #E5e7eb;
+    width: 1000px;
+    height: 300px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: relative;
+    top: 0px;
+    
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+
+#img1{
+    border-radius: 12%;
+    border: 5px solid #3882F6; 
+    margin: 8px 20px 8px 8px;
+    /* padding: 20px; */
+    height: 150px; 
+    width: 150px; 
+    float: left;
+    position: relative;
+    left: 200px;
+  }
+
+  #pic1{
+    border-radius: 10%;
+  }
+
+  .row1{
+    display: flex;
+    right: 100px;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin:100px 0;
+}
+
+#op{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1F2937 ;
+   
+}
+
+#q{
+    color: #1f2937;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    position: relative;
+    left: 200px ;
+    
+}
+
+#q1{
+    color: #1f2937;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    position: relative;
+    right: -600px;
+    
+}
+
+
+
+
+#div3{
+    background-color: white;
+    width: 1000px;
+    height: 300px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: relative;
+    top: 0px;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+#box1{
+    background-color: #3882f6;
+    width: 700px;
+    height: 100px;
+    left: 150px;
+    position: relative;
+    top: 100px;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+#b1{
+    width:140px;
+    border-radius: 12px;
+    /* padding: 12px 10px;
+     */
+    
+    position: relative;
+    left: 480px;
+    top: 30px;
+    color: white;
+    background: #3882f6;
+    border: 2px solid white;
+    cursor: pointer;
+    /* following code will animate the button */
+    transition: width 0.5s;
+}
+
+
+#lh{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    position: relative;
+    left: 10px;
+    top: -40px;
+       
+}
+
+
+#lh1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    top: -40px;
+       
+}
+
+
+#div4{
+    background-color: #1F2937;
+    width: 1000px;
+    height: 100px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: relative;
+    top: 0px;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
